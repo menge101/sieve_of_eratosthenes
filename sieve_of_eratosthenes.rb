@@ -10,22 +10,9 @@ class SieveOfEratosthenes
         x = @control_array[idx]
         y = @control_array[idy]
         next if x == y
-        break if x.nil? || y.nil?
-       @control_array.delete_at(idy) if factor?(x,y)
+       @control_array.delete_at(idy) if y % x == 0
       end
     end
     return @control_array
   end
-
-  def factor?(x,y)
-    if y % x == 0
-      return true
-    else
-      return false
-    end
-  end      
 end
-
-s = SieveOfEratosthenes.new(10000)
-puts s.find_primes.join(' ')
-
