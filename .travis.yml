@@ -1,3 +1,0 @@
-language: ruby
-
-script: "for file in ./*_test.rb; do ruby $file; done"
