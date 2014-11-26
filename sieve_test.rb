@@ -1,3 +1,4 @@
+require 'minitest'
 require 'minitest/autorun'
 require 'prime'
 require './sieve_of_eratosthenes'
