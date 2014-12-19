@@ -13,6 +13,6 @@ class SieveOfEratosthenes
        @control_array.delete_at(idy) if y % x == 0
       end
     end
-    return @control_array
+    @control_array
   end
 end
